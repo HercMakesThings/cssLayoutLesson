@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML/CSS Layout and Structure</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!--Block vs Inline Elements-->
+      <section class="sec bvi">
+        <h2>Block Vs Inline Elements</h2>
+        <div class="bvi__block sec--cyan">
+          <p>This is an example of a block level element. Note its default behavior</p>
+        </div>
+        <span class="bvi__inline sec--magenta">
+          This is an example of an inline element
+        </span>
+        <!--<span class="bvi__inline sec--magenta">
+          This is an example of an inline element
+        </span>
+        <div class="bvi__block sec--cyan">
+          <p>This is an example of a block level element. Note its default behavior</p>
+        </div>-->
+      </section>
+
+    <!--Float Property-->
+      <section class="sec floatsec">
+        <h2>The Float Property</h2>
+        <div class="clearfix">
+          <div class="floatsec__left sec--orange">
+            <p>This div is being floated to the left of its container</p>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="floatsec__right sec--magenta">
+            <p>This div is being floated to the right of its container</p>
+          </div>
+        </div>
+      </section>
+
+    <!--Display: Flex-->
+      <section class="sec flexsec">
+        <h2>Flexbox (Display: Flex)</h2>
+        <!--Items Centered in the middle of the flexbox-->
+        <div class="flexsec__center sec--cyan">
+          <div class="flexsec__item sec--red">Item 1</div>
+          <div class="flexsec__item sec--orange">Item 2</div>
+          <div class="flexsec__item sec--magenta">Item 3</div>
+        </div>
+
+        <hr>
+        <!--Items justified to the left, with 1 aligned to the right-->
+        <div class="flexsec__left sec--cyan">
+          <div class="flexsec__item sec--red">Item 1</div>
+          <div class="flexsec__item sec--orange">Item 2</div>
+          <div class="flexsec__item sec--magenta item--right">Item 3</div>
+        </div>
+
+        <hr>
+        <!--Flex Items rearranged into a vertical column-->
+        <div class="flexsec__column sec--cyan">
+          <div class="flexsec__item sec--red">Item 1</div>
+          <div class="flexsec__item sec--orange">Item 2</div>
+          <div class="flexsec__item sec--magenta">Item 3</div>
+        </div>
+      </section>
+
+    <!--Display: Grid-->
+      <section class="sec gridsec">
+        <h2>CSS Grid (Display: Grid)</h2>
+        <div class="gridsec__grid">
+          <div class="gridsec__nav sec--cyan"></div>
+          <div class="gridsec__main sec--red"></div>
+          <div class="gridsec__side sec--orange"></div>
+          <div class="gridsec__footer sec--magenta"></div>
+        </div>
+      </section>
+
+    <!--Position Property-->
+      <section class="sec positionsec">
+        <h2>The Position Property</h2>
+        <!--Child Item with position set to Relative-->
+        <div class="positionsec__container">
+          <span class="item__rel sec--red">position: relative</span>
+        </div>
+        <!--Child Item with position set to Absolute-->
+        <div class="positionsec__container">
+          <span class="item__abs sec--orange">position: absolute</span>
+        </div>
+        <!--2 Items with different z-index values-->
+        <div class="positionsec__container">
+          <div class="pos__item item--z1 sec--cyan">z-index value: 1</div>
+          <div class="pos__item item--z2 sec--magenta">z-index value: 2</div>
+        </div>
+      </section>
+
+
+  </body>
+</html>

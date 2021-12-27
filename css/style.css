@@ -1,0 +1,178 @@
+/****************************************
+*************General CSS*****************
+****************************************/
+body, html{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+body{
+  background-color: lavender;
+}
+
+.sec{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.sec--cyan{
+  background-color: cyan;
+}
+
+.sec--magenta{
+  background-color: magenta;
+}
+
+.sec--orange{
+  background-color: orange;
+}
+
+.sec--red{
+  background-color: red;
+}
+
+/****************************************
+*********Block Vs Inline Section*********
+****************************************/
+.bvi__block{
+  padding: 25px;
+}
+
+.bvi__inline{
+  /*display: block;*/
+  /*padding: 50px;*/
+  /*background-color: magenta;*/
+}
+
+
+/****************************************
+**********Float Section Stylings*********
+****************************************/
+
+.floatsec__left{
+  float: left;
+
+}
+
+.floatsec__right{
+  float: right;
+}
+
+/*clearfix hack to fix floated items overflowing outside of its container*/
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/****************************************
+**********Flex Section Stylings**********
+****************************************/
+
+.flexsec{
+
+}
+
+.flexsec__center{
+  display: flex;
+  justify-content: center;
+}
+
+.flexsec__left{
+  display: flex;
+}
+
+.flexsec__column{
+  display: flex;
+  flex-direction: column;
+}
+
+.item--right{
+  margin-left: auto;
+}
+
+.flexsec__item{
+  padding: 10px;
+}
+
+/****************************************
+***********Grid Section Stylings*********
+****************************************/
+
+.gridsec__grid{
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 65% 1fr;
+}
+
+.gridsec__nav{
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+.gridsec__main{
+  grid-column: 2 / span 3;
+  grid-row: 2;
+}
+
+.gridsec__side{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.gridsec__footer{
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+/****************************************
+***Position Property Section Stylings****
+****************************************/
+
+.positionsec__container{
+  position: relative;
+  border: 3px solid black;
+  width: 600px;
+  height: 600px;
+  margin-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.item__rel{
+  position: relative;
+  top: 35px;
+  right: 40px;
+}
+
+.item__abs{
+  position: absolute;
+  bottom: 35px;
+  right: 40px;
+}
+
+.pos__item{
+  width: 300px;
+  /*height: 50px;*/
+  position: relative;
+  border: 2px solid #fff;
+  padding: 25px 0px;
+}
+
+.item--z1{
+  top: 200px;
+  left: 150px;
+  z-index: 2;
+}
+
+.item--z2{
+  top: 180px;
+  left: 250px;
+  z-index: 1;
+}
