@@ -7,10 +7,6 @@ body, html{
   height: auto;
 }
 
-body{
-  background-color: lavender;
-}
-
 .sec{
   margin-bottom: 50px;
   text-align: center;
@@ -30,6 +26,10 @@ body{
 
 .sec--red{
   background-color: red;
+}
+
+.sec--lavender{
+  background-color: lavender;
 }
 
 /****************************************
